@@ -8,8 +8,8 @@ A Python-based RPG game where you create characters, battle enemies, level up, a
 
 | Feature | Status |
 |---|---|
-| Character Creation | ❌ Not Started |
-| Stats System (Random + Level-based) | ❌ Not Started |
+| Character Creation | Completed |
+| Stats System (Random + Level-based) |  Completed |
 | Skills System | ❌ Not Started |
 | Level Up System | ❌ Not Started |
 | Battle System | ❌ Not Started |
