@@ -10,12 +10,12 @@ A Python-based RPG game where you create characters, battle enemies, level up, a
 |---|---|
 | Character Creation | Completed |
 | Stats System (Random + Level-based) |  Completed |
-| Skills System | ❌ Not Started |
-| Level Up System | ❌ Not Started |
+| Skills System |  completed |
+| Level Up System |completed |
+| Save / Load System (JSON) | completed |
 | Battle System | ❌ Not Started |
 | Challenge Mode | ❌ Not Started |
 | Multiple Characters | ❌ Not Started |
-| Save / Load System (JSON) | ❌ Not Started |
 | Main Menu | ❌ Not Started |
 
 ---
