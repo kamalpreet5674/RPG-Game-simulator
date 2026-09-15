@@ -1,0 +1,11 @@
+{
+    "name": "Perseus",
+    "char_class": "mage",
+    "level": 1,
+    "hp": 80,
+    "attack": 27,
+    "battles": 0,
+    "skills": [
+        "Blink"
+    ]
+}

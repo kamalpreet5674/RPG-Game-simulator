@@ -141,17 +141,18 @@ class Character:
         self.attack = random.randint( character_stats["ATK"][0],character_stats["ATK"][1])
         # for attack and hp 
         
-        # for Skills
-        skill_stats = abilities[self.char_class][self.level]
-        self.skill = []
-        self.skill.append(random.choice(skill_stats))
-        # for Skills
+        # for Skillss
+        skills_stats = abilities[self.char_class][self.level]
+        self.skills = []
+        self.skills.append(random.choice(skills_stats))
+        # for Skillss
     
     
     
     def level_up(self):
 
      if self.level >= 5:
+         raise ValueError("Level should be 1-5")
          return
  
      else:
@@ -171,24 +172,15 @@ class Character:
              new_stats["ATK"][1]
          )
  
-         skill_stats = abilities[self.char_class][self.level]
+         skills_stats = abilities[self.char_class][self.level]
  
-         new_skill = random.choice(skill_stats)
+         new_skills = random.choice(skills_stats)
  
-         self.skills.append(new_skill)
+         self.skills.append(new_skills)
    
     
 
-
-        
-      
-c = Character("warrior")
-print("Start - Level:", c.level, "Skills:", c.skill)
-
-for i in range(1,5):
-    c.battles = 10
-    c.level_up()
-    print(f"Level: {c.level} | Skills: {c.skill}")      
+    
 
 
 # c = Character("mage")
@@ -196,63 +188,32 @@ for i in range(1,5):
 # print("Type = ",c.char_class)
 # print("HP = ",c.hp)
 # print("Attack = ",c.attack)
-# print("Skill = ", c.skill) 
+# print("Skills = ", c.skills) 
 # print("Level = ", c.level) 
 
-# print() 
-           
-# c1 = Character("warrior")
-# print("Character name = ",c1.name)
-# print("Type = ",c1.char_class)
-# print("HP",c1.hp)
-# print("Attack = ",c1.attack)
+# c.level_up()
+# print("Character name = ",c.name)
+# print("Type = ",c.char_class)
+# print("HP = ",c.hp)
+# print("Attack = ",c.attack)
+# print("Skills = ", c.skills) 
 # print("Level = ", c.level) 
-# print("Skill = ", c1.skill)             
 
-# c = Character("warrior")
-# print("Before level up:")
-# print("Level =", c.level)
-# print("Skills =", c.skill)
-# print("HP =", c.hp)
+# c.level_up()
+# print("Character name = ",c.name)
+# print("Type = ",c.char_class)
+# print("HP = ",c.hp)
+# print("Attack = ",c.attack)
+# print("Skills = ", c.skills) 
+# print("Level = ", c.level) 
 
-# c.battles = 10
 # c.level_up()
 
-# print("\nAfter level up:")
-# print("Level =", c.level)
-# print("Skills =", c.skill)
-# print("HP =", c.hp)
+# print("Character name = ",c.name)
+# print("Type = ",c.char_class)
+# print("HP = ",c.hp)
+# print("Attack = ",c.attack)
+# print("Skills = ", c.skills) 
+# print("Level = ", c.level) 
 
 
-# c.battles = 10
-# c.level_up()
-
-# print("Level =", c.level)
-# print("\nAfter level up:")
-# print("Level =", c.level)
-# print("Skills =", c.skill)
-# print("HP =", c.hp)
-
-# c.battles = 10
-# c.level_up()
-# print("Level =", c.level)
-# print("\nAfter level up:")
-# print("Level =", c.level)
-# print("Skills =", c.skill)
-# print("HP =", c.hp)
-
-# c.battles = 10
-# c.level_up()
-# print("Level =", c.level)
-# print("\nAfter level up:")
-# print("Level =", c.level)
-# print("Skills =", c.skill)
-# print("HP =", c.hp)
-
-# c.battles = 10
-# c.level_up()
-# print("Level =", c.level)
-# print("\nAfter level up:")
-# print("Level =", c.level)
-# print("Skills =", c.skill)
-# print("HP =", c.hp)
