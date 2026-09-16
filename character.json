@@ -1,11 +1,11 @@
 {
-    "name": "Perseus",
+    "name": "Eivor",
     "char_class": "mage",
     "level": 1,
-    "hp": 80,
-    "attack": 27,
+    "hp": 81,
+    "attack": 28,
     "battles": 0,
     "skills": [
-        "Blink"
+        "Mana_Regen"
     ]
 }

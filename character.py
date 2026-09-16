@@ -1,4 +1,5 @@
 import random
+from entity import Entity
 
 names = [
     # Aapke original names
@@ -119,7 +120,7 @@ abilities = {
 
 
 
-class Character:
+class Character(Entity):
     
     def __init__(self,chr_class):
         
@@ -146,7 +147,14 @@ class Character:
         self.skills = []
         self.skills.append(random.choice(skills_stats))
         # for Skillss
-    
+        
+        super().__init__(
+            self.name,
+            self.level,
+            self.hp,
+            self.attack,
+            self.skills
+        )
     
     
     def level_up(self):
@@ -191,29 +199,5 @@ class Character:
 # print("Skills = ", c.skills) 
 # print("Level = ", c.level) 
 
-# c.level_up()
-# print("Character name = ",c.name)
-# print("Type = ",c.char_class)
-# print("HP = ",c.hp)
-# print("Attack = ",c.attack)
-# print("Skills = ", c.skills) 
-# print("Level = ", c.level) 
-
-# c.level_up()
-# print("Character name = ",c.name)
-# print("Type = ",c.char_class)
-# print("HP = ",c.hp)
-# print("Attack = ",c.attack)
-# print("Skills = ", c.skills) 
-# print("Level = ", c.level) 
-
-# c.level_up()
-
-# print("Character name = ",c.name)
-# print("Type = ",c.char_class)
-# print("HP = ",c.hp)
-# print("Attack = ",c.attack)
-# print("Skills = ", c.skills) 
-# print("Level = ", c.level) 
 
 
